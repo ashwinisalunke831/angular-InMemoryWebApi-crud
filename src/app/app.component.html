@@ -1,0 +1,23 @@
+<app-header></app-header>
+
+<table>
+  <tr *ngFor="let u of users">
+    <td>
+      {{u.id}}
+    </td>
+    <td>
+      {{u.name}}
+    </td>
+    <td>
+      {{u.email}}
+    </td>
+    <td>
+      {{u.contact}}
+    </td>
+    <td>
+      <button (click)="deleteUser(u)">delete</button>
+    </td>
+  </tr>
+</table>
+<app-footer></app-footer>
+<router-outlet></router-outlet>
